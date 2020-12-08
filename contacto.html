@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contáctanos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="shortcut icon" href="img/gift.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+			 <a href="index.html">
+            <div class="logo"> </div>
+            </a>
+           <div class="ventana"> </div>
+            <a href="index.html">Inicio</a>
+            <a href="contacto.html">Contáctanos</a>
+        </nav>
+     
+
+        <section class="textos-header">
+            <h1>Necesitas un Obsequio con un Diseño Único</h1>
+            <h2>Contactános y de manera personalizada nos comunicaremos contigo
+                JAD DELICIAS & ALGO MÁS esta para servirle.
+            </h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+    </header>
+    <main>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">Nuestras Redes Sociales</h2>
+            <div class="contenedor-sobre-nosotros">
+                <div class="hol">
+
+                </div>
+                <div class="espacio"> </div>
+
+                <div class="slider">
+                    <div id="img">
+                        <img id="imgSlider" src="img/portada.jpg" style="height: 100%; width: 100%;">
+                    </div>
+
+                </div>
+
+                <div class="contenido-textos">
+                    <img src="img/mail.svg" height="90px" width="60px" alt="">
+                    <h3><span>1</span>Correo Electrónico</h3>
+                    <p>j20verdezoto@hotmail.com</p>
+
+                    <img src="img/whatsapp1.svg " height="90px" width="60px" alt="">
+                    <h3><span>2</span>Whatsap</h3>
+					<div class="col-md-4 ml-4">
+					<a href="https://api.whatsapp.com/send?phone=%2B593983477469&text=Hola%20JAD%20DELICIAS%20%26%20ALGO%20M%C3%81S%20estoy%20interesado%20en%20utilizar%20sus%20servicios"
+                         class="btn btn-info btn-block" target="_blank">JAD DELICIAS & ALGO MÁS</a>
+					</div>	 
+			        <p>0983477469</p>
+                    
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="contenedor-footer">
+                <div class="content-foo">
+                    <img src="img/whatsapp.svg " height="40px" width="40px" alt="">
+                    <h4>Whatsap</h4>
+                    <p>0983477469</p>
+                    <a href="https://api.whatsapp.com/send?phone=%2B593983477469&text=Hola%20JAD%20DELICIAS%20%26%20ALGO%20M%C3%81S%20estoy%20interesado%20en%20utilizar%20sus%20servicios"
+                    class="btn btn-info btn-block" target="_blank">JAD DELICIAS & ALGO MÁS</a>
+                </div>
+                <div class="content-foo">
+                    <img src="img/email.svg" height="40px" width="40px" alt="">
+                    <h4>Correo Electrónico</h4>
+                    <p>j20verdezoto@hotmail.com</p>
+                </div>
+               
+            </div>
+            <h2 class="titulo-final">&copy; ECAR | EDCP</h2>
+        </footer>
+    </main>
+    
+
+    <script>
+        var img = document.getElementById('img');
+
+        var imagenes = ['img/p13.jpeg', 'img/4.jpeg'];
+
+        var x = 0;
+
+        function slide() {
+            if (x < imagenes.length) {
+                x = x + 1;
+            } else {
+                x = 1;
+            }
+
+            img.innerHTML = "<img src=" + imagenes[x - 1] + ">";
+
+        }
+
+        setInterval(slide, 4000);
+    </script>
+
+
+
+
+</body>
+
+</html>
